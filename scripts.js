@@ -31,7 +31,8 @@ function countdown() {
     
     if (distance < 0) {
         clearInterval(countdownInterval);
-        document.querySelector('.container').innerHTML = '<h1>Happy New Year!</h1>';
+        document.querySelector('.container').innerHTML = '<h1>Happy New Year! 🎉🎆</h1><p><p>   
+May 2025 bring you success, joy, and plenty of opportunities to grow your skills and achieve your goals. Cheers to a prosperous year ahead! 🥂</p>';
         startBalloons();
     }
 }

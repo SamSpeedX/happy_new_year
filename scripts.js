@@ -51,7 +51,7 @@ setInterval(() => {
     
     setTimeout(() => {
         balloon.remove();
-    }, 5000);
+    }, 500);
 }
 
 function startBalloons() {

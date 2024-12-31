@@ -58,7 +58,6 @@ function startBalloons() {
     setInterval(createBalloon, 3000);
 }
     
-            document.querySelector('.container').innerHTML = "<h1>Happy New Year! 🎉🎆</h1><p><p>   
-May 2025 bring you success, joy, and plenty of opportunities to grow your skills and achieve your goals. Cheers to a prosperous year ahead! 🥂</p>";
+            document.querySelector('.container').innerHTML = "<h1>Happy New Year! 🎉🎆</h1><p>May 2025 bring you success, joy, and plenty of opportunities to grow your skills and achieve your goals. Cheers to a prosperous year ahead! 🥂</p>";
         startBalloons();
 }, 100)

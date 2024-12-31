@@ -1,4 +1,4 @@
-/* function createBalloon() {
+function createBalloon() {
     const balloon = document.createElement('div');
     balloon.className = 'balloon';
     balloon.style.left = Math.random() * 100 + 'vw';
@@ -32,15 +32,14 @@ function countdown() {
     
     if (1 == 1) {
         clearInterval(countdownInterval);
-        document.querySelector('.container').innerHTML = "<h1>Happy New Year! 🎉🎆</h1><p>   
-May 2025 bring you success, joy, and plenty of opportunities to grow your skills and achieve your goals. Cheers to a prosperous year ahead! 🥂</p>';
+        document.querySelector('.container').innerHTML = "<h1>Happy New Year! 🎉🎆</h1><p>May 2025 bring you success, joy, and plenty of opportunities to grow your skills and achieve your goals. Cheers to a prosperous year ahead! 🥂</p>";
         startBalloons();
     }
 }
 
-const countdownInterval = setInterval(countdown, 100);
-countdown();*/
-
+const countdownInterval = setInterval(countdown, 1000);
+countdown();
+/*
 setInterval(() => {
     function createBalloon() {
         const balloon = document.createElement('div');
@@ -61,3 +60,4 @@ setInterval(() => {
             document.querySelector('.container').innerHTML = "<h1>Happy New Year! 🎉🎆</h1><p>May 2025 bring you success, joy, and plenty of opportunities to grow your skills and achieve your goals. Cheers to a prosperous year ahead! 🥂</p>";
         startBalloons();
 }, 100)
+*/

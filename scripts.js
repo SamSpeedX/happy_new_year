@@ -43,21 +43,21 @@ countdown();*/
 
 setInterval(() => {
     function createBalloon() {
-    const balloon = document.createElement('div');
-    balloon.className = 'balloon';
-    balloon.style.left = Math.random() * 100 + 'vw';
-    balloon.style.animationDuration = Math.random() * 2 + 3 + 's';
-    document.body.appendChild(balloon);
+        const balloon = document.createElement('div');
+        balloon.className = 'balloon';
+        balloon.style.left = Math.random() * 100 + 'vw';
+        balloon.style.animationDuration = Math.random() * 2 + 3 + 's';
+        document.body.appendChild(balloon);
+        
+        setTimeout(() => {
+            balloon.remove();
+        }, 5000);
+    }
     
-    setTimeout(() => {
-        balloon.remove();
-    }, 5000);
-}
-
-function startBalloons() {
-    setInterval(createBalloon, 3000);
-}
+    function startBalloons() {
+        setInterval(createBalloon, 3000);
+    }
     
             document.querySelector('.container').innerHTML = "<h1>Happy New Year! 🎉🎆</h1><p>May 2025 bring you success, joy, and plenty of opportunities to grow your skills and achieve your goals. Cheers to a prosperous year ahead! 🥂</p>";
         startBalloons();
-}, 1000)
+}, 100)

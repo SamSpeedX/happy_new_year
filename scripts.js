@@ -15,7 +15,7 @@ function countdown() {
 
     if (distance < 0) {
         clearInterval(countdownInterval);
-        document.querySelector('.container').innerHTML = '<h1>Happy New Year!</h1>';
+        document.querySelector('.container').innerHTML = '<h1>Happy New Year!</h1><br><p>Simon wishng you happy new year, you are part of my famly</p><p>Wishing you all a fantastic new year filled with happiness and success!</p><p>happy 2025 my dear.</p>';
     }
 }
 

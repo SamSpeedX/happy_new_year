@@ -15,7 +15,7 @@ function startBalloons() {
 }
 
 function countdown() {
-    const newYear = new Date('Jan 1, 2025 00:00:00').getTime();
+    const newYear = new Date('Dec 31, 2024 24:50:00').getTime();
     const now = new Date().getTime();
     const distance = newYear - now;
     

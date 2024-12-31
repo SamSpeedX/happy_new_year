@@ -11,7 +11,7 @@ function createBalloon() {
 }
 
 function startBalloons() {
-    setInterval(createBalloon, 300);
+    setInterval(createBalloon, 3000);
 }
 
 function countdown() {

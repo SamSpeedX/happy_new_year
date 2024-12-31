@@ -47,6 +47,7 @@ footer {
     padding: 10px 0;
     text-align: center;
     animation: fadeIn 2s;
+    bottom: 0rem;
 }
 
 @media (max-width: 1024px) {

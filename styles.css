@@ -7,11 +7,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 .container {
     animation: fadeIn 2s;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 @keyframes fadeIn {
@@ -24,10 +27,12 @@ body {
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 #countdown div {
     font-size: 2rem;
+    min-width: 80px;
 }
 
 #countdown span {
@@ -36,12 +41,90 @@ body {
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
     width: 100%;
     background: #20232a;
     color: white;
     padding: 10px 0;
     text-align: center;
     animation: fadeIn 2s;
+}
+
+@media (max-width: 1024px) {
+    #countdown div {
+        font-size: 1.8rem;
+    }
+
+    #countdown span {
+        font-size: 2.5rem;
+    }
+
+    .container h1 {
+        font-size: 2.5rem;
+    }
+
+    .container p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #countdown div {
+        font-size: 1.5rem;
+    }
+
+    #countdown span {
+        font-size: 2rem;
+    }
+
+    .container h1 {
+        font-size: 2rem;
+    }
+
+    .container p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #countdown {
+        flex-direction: column;
+    }
+
+    #countdown div {
+        font-size: 1.2rem;
+    }
+
+    #countdown span {
+        font-size: 1.5rem;
+    }
+
+    .container h1 {
+        font-size: 1.5rem;
+    }
+
+    .container p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 320px) {
+    #countdown {
+        flex-direction: column;
+    }
+
+    #countdown div {
+        font-size: 1rem;
+    }
+
+    #countdown span {
+        font-size: 1.2rem;
+    }
+
+    .container h1 {
+        font-size: 1.2rem;
+    }
+
+    .container p {
+        font-size: 0.8rem;
+    }
 }

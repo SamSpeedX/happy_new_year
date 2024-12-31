@@ -29,7 +29,7 @@ function countdown() {
     document.getElementById('minutes').innerText = minutes;
     document.getElementById('seconds').innerText = seconds;
     
-    if (distance < 0) {
+    if (1 == 1) {
         clearInterval(countdownInterval);
         document.querySelector('.container').innerHTML = '<h1>Happy New Year! 🎉🎆</h1><p><p>   
 May 2025 bring you success, joy, and plenty of opportunities to grow your skills and achieve your goals. Cheers to a prosperous year ahead! 🥂</p>';
@@ -37,5 +37,5 @@ May 2025 bring you success, joy, and plenty of opportunities to grow your skills
     }
 }
 
-const countdownInterval = setInterval(countdown, 1000);
+const countdownInterval = setInterval(countdown, 100);
 countdown();
